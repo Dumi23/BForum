@@ -28,7 +28,7 @@ namespace API.Controllers
         [HttpGet]
         public async Task<ActionResult<List<Post>>> GetPosts()
         {
-            return await Mediator.Send(new PostList.Query());
+            return await    (new PostList.Query());
         }
 
         [HttpGet("{id}")]
