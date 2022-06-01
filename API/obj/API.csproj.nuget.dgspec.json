@@ -1,21 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "c:\\Users\\malid\\Documents\\BForum\\API\\API.csproj": {}
+    "/home/antonlite/Documents/BForum/API/API.csproj": {}
   },
   "projects": {
-    "c:\\Users\\malid\\Documents\\BForum\\API\\API.csproj": {
+    "/home/antonlite/Documents/BForum/API/API.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "c:\\Users\\malid\\Documents\\BForum\\API\\API.csproj",
+        "projectUniqueName": "/home/antonlite/Documents/BForum/API/API.csproj",
         "projectName": "API",
-        "projectPath": "c:\\Users\\malid\\Documents\\BForum\\API\\API.csproj",
-        "packagesPath": "C:\\Users\\malid\\.nuget\\packages\\",
-        "outputPath": "c:\\Users\\malid\\Documents\\BForum\\API\\obj\\",
+        "projectPath": "/home/antonlite/Documents/BForum/API/API.csproj",
+        "packagesPath": "/home/antonlite/.nuget/packages/",
+        "outputPath": "/home/antonlite/Documents/BForum/API/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\malid\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "/home/antonlite/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net6.0"
@@ -27,8 +26,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "c:\\Users\\malid\\Documents\\BForum\\Application\\Application.csproj": {
-                "projectPath": "c:\\Users\\malid\\Documents\\BForum\\Application\\Application.csproj"
+              "/home/antonlite/Documents/BForum/Application/Application.csproj": {
+                "projectPath": "/home/antonlite/Documents/BForum/Application/Application.csproj"
               }
             }
           }
@@ -66,6 +65,12 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[6.0.2, 6.0.2]"
+            }
+          ],
           "frameworkReferences": {
             "Microsoft.AspNetCore.App": {
               "privateAssets": "none"
@@ -74,41 +79,111 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.202\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/6.0.102/RuntimeIdentifierGraph.json"
         }
       }
     },
-    "c:\\Users\\malid\\Documents\\BForum\\Application\\Application.csproj": {
+    "/home/antonlite/Documents/BForum/Application/Application.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "c:\\Users\\malid\\Documents\\BForum\\Application\\Application.csproj",
+        "projectUniqueName": "/home/antonlite/Documents/BForum/Application/Application.csproj",
         "projectName": "Application",
-        "projectPath": "c:\\Users\\malid\\Documents\\BForum\\Application\\Application.csproj",
-        "packagesPath": "C:\\Users\\malid\\.nuget\\packages\\",
-        "outputPath": "c:\\Users\\malid\\Documents\\BForum\\Application\\obj\\",
+        "projectPath": "/home/antonlite/Documents/BForum/Application/Application.csproj",
+        "packagesPath": "/home/antonlite/.nuget/packages/",
+        "outputPath": "/home/antonlite/Documents/BForum/Application/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\malid\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "/home/antonlite/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net6.0"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "c:\\Users\\malid\\Documents\\BForum\\Domain\\Domain.csproj": {
-                "projectPath": "c:\\Users\\malid\\Documents\\BForum\\Domain\\Domain.csproj"
+              "/home/antonlite/Documents/BForum/Domain/Domain.csproj": {
+                "projectPath": "/home/antonlite/Documents/BForum/Domain/Domain.csproj"
               },
-              "c:\\Users\\malid\\Documents\\BForum\\Persistence\\Persistence.csproj": {
-                "projectPath": "c:\\Users\\malid\\Documents\\BForum\\Persistence\\Persistence.csproj"
+              "/home/antonlite/Documents/BForum/Persistence/Persistence.csproj": {
+                "projectPath": "/home/antonlite/Documents/BForum/Persistence/Persistence.csproj"
               }
             }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "AutoMapper.Extensions.Microsoft.DependencyInjection": {
+              "target": "Package",
+              "version": "[11.0.0, )"
+            },
+            "MediatR.Extensions.Microsoft.DependencyInjection": {
+              "target": "Package",
+              "version": "[9.0.0, )"
+            },
+            "Microsoft.EntityFrameworkCore.Sqlite": {
+              "target": "Package",
+              "version": "[6.0.1, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[6.0.2, 6.0.2]"
+            }
+          ],
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/6.0.102/RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/home/antonlite/Documents/BForum/Domain/Domain.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/home/antonlite/Documents/BForum/Domain/Domain.csproj",
+        "projectName": "Domain",
+        "projectPath": "/home/antonlite/Documents/BForum/Domain/Domain.csproj",
+        "packagesPath": "/home/antonlite/.nuget/packages/",
+        "outputPath": "/home/antonlite/Documents/BForum/Domain/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/home/antonlite/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {}
           }
         },
         "warningProperties": {
@@ -140,101 +215,45 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "frameworkReferences": {
-            "Microsoft.NETCore.App": {
-              "privateAssets": "all"
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[6.0.2, 6.0.2]"
             }
-          },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.202\\RuntimeIdentifierGraph.json"
-        }
-      }
-    },
-    "c:\\Users\\malid\\Documents\\BForum\\Domain\\Domain.csproj": {
-      "version": "1.0.0",
-      "restore": {
-        "projectUniqueName": "c:\\Users\\malid\\Documents\\BForum\\Domain\\Domain.csproj",
-        "projectName": "Domain",
-        "projectPath": "c:\\Users\\malid\\Documents\\BForum\\Domain\\Domain.csproj",
-        "packagesPath": "C:\\Users\\malid\\.nuget\\packages\\",
-        "outputPath": "c:\\Users\\malid\\Documents\\BForum\\Domain\\obj\\",
-        "projectStyle": "PackageReference",
-        "configFilePaths": [
-          "C:\\Users\\malid\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
-        ],
-        "originalTargetFrameworks": [
-          "net6.0"
-        ],
-        "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "https://api.nuget.org/v3/index.json": {}
-        },
-        "frameworks": {
-          "net6.0": {
-            "targetAlias": "net6.0",
-            "projectReferences": {}
-          }
-        },
-        "warningProperties": {
-          "warnAsError": [
-            "NU1605"
-          ]
-        }
-      },
-      "frameworks": {
-        "net6.0": {
-          "targetAlias": "net6.0",
-          "dependencies": {
-            "Microsoft.EntityFrameworkCore.Sqlite": {
-              "target": "Package",
-              "version": "[6.0.1, )"
-            }
-          },
-          "imports": [
-            "net461",
-            "net462",
-            "net47",
-            "net471",
-            "net472",
-            "net48"
           ],
-          "assetTargetFallback": true,
-          "warn": true,
           "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.202\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/6.0.102/RuntimeIdentifierGraph.json"
         }
       }
     },
-    "c:\\Users\\malid\\Documents\\BForum\\Persistence\\Persistence.csproj": {
+    "/home/antonlite/Documents/BForum/Persistence/Persistence.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "c:\\Users\\malid\\Documents\\BForum\\Persistence\\Persistence.csproj",
+        "projectUniqueName": "/home/antonlite/Documents/BForum/Persistence/Persistence.csproj",
         "projectName": "Persistence",
-        "projectPath": "c:\\Users\\malid\\Documents\\BForum\\Persistence\\Persistence.csproj",
-        "packagesPath": "C:\\Users\\malid\\.nuget\\packages\\",
-        "outputPath": "c:\\Users\\malid\\Documents\\BForum\\Persistence\\obj\\",
+        "projectPath": "/home/antonlite/Documents/BForum/Persistence/Persistence.csproj",
+        "packagesPath": "/home/antonlite/.nuget/packages/",
+        "outputPath": "/home/antonlite/Documents/BForum/Persistence/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\malid\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "/home/antonlite/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net6.0"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "c:\\Users\\malid\\Documents\\BForum\\Domain\\Domain.csproj": {
-                "projectPath": "c:\\Users\\malid\\Documents\\BForum\\Domain\\Domain.csproj"
+              "/home/antonlite/Documents/BForum/Domain/Domain.csproj": {
+                "projectPath": "/home/antonlite/Documents/BForum/Domain/Domain.csproj"
               }
             }
           }
@@ -249,6 +268,10 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "dependencies": {
+            "MediatR.Extensions.Microsoft.DependencyInjection": {
+              "target": "Package",
+              "version": "[9.0.0, )"
+            },
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",
               "version": "[6.0.5, )"
@@ -268,12 +291,18 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[6.0.2, 6.0.2]"
+            }
+          ],
           "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.202\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/6.0.102/RuntimeIdentifierGraph.json"
         }
       }
     }

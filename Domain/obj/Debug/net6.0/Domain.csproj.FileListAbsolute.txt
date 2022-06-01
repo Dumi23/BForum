@@ -1,0 +1,5 @@
+/home/antonlite/Documents/BForum/Domain/obj/Debug/net6.0/Domain.csproj.AssemblyReference.cache
+/home/antonlite/Documents/BForum/Domain/obj/Debug/net6.0/Domain.GeneratedMSBuildEditorConfig.editorconfig
+/home/antonlite/Documents/BForum/Domain/obj/Debug/net6.0/Domain.AssemblyInfoInputs.cache
+/home/antonlite/Documents/BForum/Domain/obj/Debug/net6.0/Domain.AssemblyInfo.cs
+/home/antonlite/Documents/BForum/Domain/obj/Debug/net6.0/Domain.csproj.CoreCompileInputs.cache

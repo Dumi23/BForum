@@ -1,21 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "c:\\Users\\malid\\Documents\\BForum\\Domain\\Domain.csproj": {}
+    "/home/antonlite/Documents/BForum/Domain/Domain.csproj": {}
   },
   "projects": {
-    "c:\\Users\\malid\\Documents\\BForum\\Domain\\Domain.csproj": {
+    "/home/antonlite/Documents/BForum/Domain/Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "c:\\Users\\malid\\Documents\\BForum\\Domain\\Domain.csproj",
+        "projectUniqueName": "/home/antonlite/Documents/BForum/Domain/Domain.csproj",
         "projectName": "Domain",
-        "projectPath": "c:\\Users\\malid\\Documents\\BForum\\Domain\\Domain.csproj",
-        "packagesPath": "C:\\Users\\malid\\.nuget\\packages\\",
-        "outputPath": "c:\\Users\\malid\\Documents\\BForum\\Domain\\obj\\",
+        "projectPath": "/home/antonlite/Documents/BForum/Domain/Domain.csproj",
+        "packagesPath": "/home/antonlite/.nuget/packages/",
+        "outputPath": "/home/antonlite/Documents/BForum/Domain/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\malid\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "/home/antonlite/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net6.0"
@@ -58,12 +57,18 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[6.0.2, 6.0.2]"
+            }
+          ],
           "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.202\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/6.0.102/RuntimeIdentifierGraph.json"
         }
       }
     }
