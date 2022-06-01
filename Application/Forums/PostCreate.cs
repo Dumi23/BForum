@@ -8,28 +8,28 @@ using Persistence;
 
 namespace Application.Forums
 {
-    public class ForumCreate
+    public class PostCreate
     {
-        public class Command : IRequest
+        public class Command: IRequest
         {
-            public Forum Forum { get; set; }
-
+            public Post Post { get; set; }
         }
 
         public class Handler: IRequestHandler<Command>
         {
             private readonly DataContext _context;
+
             public Handler(DataContext context)
             {
-                _context = context;   
+                _context = context;  
             }
 
             public async Task<Unit> Handle(Command request, CancellationToken cancellationToken)
             {
-                _context.Forums.Add(request.Forum);
+                _context.Posts.Add(request.Post);
 
                 await _context.SaveChangesAsync();
-                
+
                 return Unit.Value;
             }
         }

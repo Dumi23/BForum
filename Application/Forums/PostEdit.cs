@@ -8,28 +8,30 @@ using Persistence;
 
 namespace Application.Forums
 {
-    public class ForumCreate
+    public class PostEdit
     {
-        public class Command : IRequest
+        public class Command: IRequest
         {
-            public Forum Forum { get; set; }
-
+            public Post Post { get; set; }
         }
+    
 
         public class Handler: IRequestHandler<Command>
         {
             private readonly DataContext _context;
             public Handler(DataContext context)
             {
-                _context = context;   
+                _context = context;
             }
 
             public async Task<Unit> Handle(Command request, CancellationToken cancellationToken)
             {
-                _context.Forums.Add(request.Forum);
+                var post = await _context.Posts.FindAsync(request.Post.Id);
+
+                post.Title = request.Post.Title ?? post.Title;
 
                 await _context.SaveChangesAsync();
-                
+
                 return Unit.Value;
             }
         }
