@@ -5,6 +5,7 @@ using System.Threading.Tasks;
 using Domain;
 using MediatR;
 using Persistence;
+using AutoMapper;
 
 namespace Application.Forums
 {
@@ -19,8 +20,10 @@ namespace Application.Forums
         public class Handler: IRequestHandler<Command>
         {
             private readonly DataContext _context;
-            public Handler(DataContext context)
+            private readonly IMapper _mapper;
+            public Handler(DataContext context, IMapper mapper)
             {
+                _mapper = mapper;
                 _context = context;
             }
 
@@ -28,7 +31,7 @@ namespace Application.Forums
             {
                 var post = await _context.Posts.FindAsync(request.Post.Id);
 
-                post.Title = request.Post.Title ?? post.Title;
+                _mapper.Map(request.Post, post);
 
                 await _context.SaveChangesAsync();
 

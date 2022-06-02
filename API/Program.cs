@@ -22,6 +22,7 @@ builder.Services.AddCors(opt =>
     });
 });
 builder.Services.AddMediatR(typeof(List.Handler).Assembly, typeof(PostList.PostHandler).Assembly, typeof(PostReplyList.PostReplytHandler).Assembly);
+builder.Services.AddAutoMapper(typeof(MappingProfiles).Assembly);
 
 var app = builder.Build();
 

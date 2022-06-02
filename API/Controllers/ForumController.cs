@@ -88,6 +88,24 @@ namespace API.Controllers
             return Ok(await Mediator.Send(new PostReplyEdit.Command{PostReply = postReply}));
         }
 
+        [HttpDelete("{id}")]
+        public async Task<IActionResult> DeleteForum(int id)
+        {
+            return Ok(await Mediator.Send(new ForumDelete.Command{Id = id}));
+        }
+
+        [HttpDelete("{id}")]
+        public async Task<IActionResult> DeletePost(int id)
+        {
+            return Ok(await Mediator.Send(new PostDelete.Command{Id = id}));
+        }
+
+        [HttpDelete("{id}")]
+        public async Task<IActionResult> DeletePostReply(int id)
+        {
+            return Ok(await Mediator.Send(new PostReplyDelete.Command{Id = id}));
+        }
+
         
     }
 }   
